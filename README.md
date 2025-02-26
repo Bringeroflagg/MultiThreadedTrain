@@ -1,6 +1,11 @@
-Step 1. $ make
-Step 2. $ ./mts test1.txt
+MTS is designed to manage train scheduling and dispatch using multithreading. It leverages the PThread library for concurrency, employing mutex and conditions to orchestrate train threads.
+Using priority linked list queue.
 
+Step 1. $ make
+
+Step 2. $ ./mts test1.txt
+Run example:
+![image](https://github.com/user-attachments/assets/7ab40c82-4432-45fc-9d92-f2bceaf572f1)
 Internal Logic Overview
 1. Open File & Create Queue Mutex
 
@@ -32,7 +37,4 @@ Internal Logic Overview
 11. Program Exit
 
   - Once all threads complete and resources are released, the program terminates.
-
-Run example:
-![image](https://github.com/user-attachments/assets/7ab40c82-4432-45fc-9d92-f2bceaf572f1)
 
